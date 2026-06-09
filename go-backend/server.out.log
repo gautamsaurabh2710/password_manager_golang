@@ -1,0 +1,42 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> password-manager-go/internal/httpapi.NewRouter.func1 (4 handlers)
+[GIN-debug] GET    /api/security/public-key  --> password-manager-go/internal/httpapi.(*API).publicKey-fm (4 handlers)
+[GIN-debug] POST   /api/auth/register        --> password-manager-go/internal/httpapi.(*API).register-fm (5 handlers)
+[GIN-debug] POST   /api/auth/verify-otp      --> password-manager-go/internal/httpapi.(*API).verifyOTP-fm (5 handlers)
+[GIN-debug] POST   /api/auth/login           --> password-manager-go/internal/httpapi.(*API).login-fm (5 handlers)
+[GIN-debug] POST   /api/auth/logout          --> password-manager-go/internal/httpapi.(*API).logout-fm (4 handlers)
+[GIN-debug] POST   /api/auth/forgot-password --> password-manager-go/internal/httpapi.(*API).forgotPassword-fm (5 handlers)
+[GIN-debug] POST   /api/auth/reset-password  --> password-manager-go/internal/httpapi.(*API).resetPassword-fm (5 handlers)
+[GIN-debug] POST   /api/passwords            --> password-manager-go/internal/httpapi.(*API).addPassword-fm (5 handlers)
+[GIN-debug] GET    /api/passwords            --> password-manager-go/internal/httpapi.(*API).getPasswords-fm (5 handlers)
+[GIN-debug] POST   /api/passwords/:id/reveal --> password-manager-go/internal/httpapi.(*API).revealPassword-fm (5 handlers)
+[GIN-debug] PUT    /api/passwords/:id        --> password-manager-go/internal/httpapi.(*API).updatePassword-fm (5 handlers)
+[GIN-debug] DELETE /api/passwords/:id        --> password-manager-go/internal/httpapi.(*API).deletePassword-fm (5 handlers)
+[GIN] 2026/06/02 - 19:09:03 | 404 |            0s |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/06/02 - 19:12:23 | 200 |    942.1896ms |             ::1 | GET      "/api/security/public-key"
+[GIN] 2026/06/02 - 19:12:44 | 200 |   10.2042502s |             ::1 | POST     "/api/auth/login"
+[GIN] 2026/06/02 - 19:12:59 | 200 |    1.0447838s |             ::1 | POST     "/api/auth/verify-otp"
+[GIN] 2026/06/02 - 19:13:00 | 200 |      54.414ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:13:22 | 409 |     35.3823ms |             ::1 | POST     "/api/passwords"
+[GIN] 2026/06/02 - 19:13:28 | 200 |      9.8486ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:13:36 | 200 |     18.0241ms |             ::1 | POST     "/api/passwords/6a1744b682501cf7271220f3/reveal"
+[GIN] 2026/06/02 - 19:13:50 | 200 |            0s |             ::1 | GET      "/api/security/public-key"
+[GIN] 2026/06/02 - 19:13:50 | 200 |     31.7372ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:13:59 | 200 |     16.8295ms |             ::1 | POST     "/api/passwords/6a17452f82501cf7271220f4/reveal"
+[GIN] 2026/06/02 - 19:15:07 | 200 |      40.604ms |             ::1 | POST     "/api/passwords/6a17461682501cf7271220f5/reveal"
+[GIN] 2026/06/02 - 19:35:27 | 200 |    3.8253676s |             ::1 | POST     "/api/auth/login"
+[GIN] 2026/06/02 - 19:35:33 | 200 |            0s |             ::1 | GET      "/api/security/public-key"
+[GIN] 2026/06/02 - 19:36:09 | 200 |     354.306ms |             ::1 | POST     "/api/auth/verify-otp"
+[GIN] 2026/06/02 - 19:36:10 | 200 |     72.2442ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:36:22 | 200 |     11.7337ms |             ::1 | POST     "/api/passwords/6a1744b682501cf7271220f3/reveal"
+[GIN] 2026/06/02 - 19:36:49 | 201 |     32.6086ms |             ::1 | POST     "/api/passwords"
+[GIN] 2026/06/02 - 19:36:49 | 200 |      9.9656ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:38:09 | 409 |     18.5232ms |             ::1 | POST     "/api/passwords"
+[GIN] 2026/06/02 - 19:38:21 | 409 |     18.9237ms |             ::1 | POST     "/api/passwords"
+[GIN] 2026/06/02 - 19:38:31 | 201 |     49.5002ms |             ::1 | POST     "/api/passwords"
+[GIN] 2026/06/02 - 19:38:31 | 200 |     10.1528ms |             ::1 | GET      "/api/passwords"
+[GIN] 2026/06/02 - 19:39:00 | 200 |            0s |             ::1 | GET      "/api/security/public-key"
+[GIN] 2026/06/02 - 19:39:00 | 200 |     34.8575ms |             ::1 | GET      "/api/passwords"

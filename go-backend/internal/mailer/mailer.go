@@ -7,6 +7,9 @@ import (
 )
 
 func SendOTP(email, otp, user, pass string) error {
+
+	fmt.Println("EMAIL_USER:", user)
+    fmt.Println("EMAIL_PASS_SET:", pass != "")
 	if user == "" || pass == "" {
 		return fmt.Errorf("missing EMAIL_USER/EMAIL_PASS")
 	}

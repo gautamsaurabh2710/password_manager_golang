@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const API_BASE_URL = import.meta.env.example.VITE_API_BASE_URL || "https://password-manager-golang.onrender.com";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://password-manager-golang.onrender.com";
 
 function App() {
   const [token, setToken] = React.useState(() => localStorage.getItem("token") || "");

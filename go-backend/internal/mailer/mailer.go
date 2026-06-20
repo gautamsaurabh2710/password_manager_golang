@@ -3,7 +3,7 @@ package mailer
 import (
 	"fmt"
 
-	"gopkg.in/gomail.v2"
+	//"gopkg.in/gomail.v2"
 )
 
 func SendOTP(email, otp, user, pass string) error {
